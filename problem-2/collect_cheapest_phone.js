@@ -2,19 +2,19 @@
 //  How to search cheapest phone in the array Object
 
 let phones = [
-    {name:"sumsumg", Price: 2400, color: "Dark Blue", camera:"25px"},
-    {name:"Nokia", Price: 3200, color: "Blck", camera:"50px"},
-    {name:"Wolton", Price: 1400, color: "Blue", camera:"12px"},
-    {name:"Iphone", Price: 12400, color: "Gray", camera:"125px"},
-    {name:"Redmi", Price: 1600, color: "Dark Blue", camera:"25px"},
-    {name:"Vivo", Price: 2000, color: "Dark Blue", camera:"25px"},
-    {name:"Oppo", Price: 1900, color: "Blue", camera:"25px"}
+    {name:"sumsumg", price: 24000, color: "Dark Blue", camera:"25px"},
+    {name:"Nokia", price: 32000, color: "Blck", camera:"50px"},
+    {name:"Wolton", price: 14000, color: "Blue", camera:"12px"},
+    {name:"Iphone", price: 120400, color: "Gray", camera:"125px"},
+    {name:"Redmi", price: 16000, color: "Dark Blue", camera:"25px"},
+    {name:"Vivo", price: 20000, color: "Dark Blue", camera:"25px"},
+    {name:"Oppo", price: 19000, color: "Blue", camera:"25px"}
 ]
 
 function cheapsetPhone (phones) {
     let min = phones[0]
-    for(let phone of phones) {
-       if(phone.Price > min.Price) {
+    for(const phone of phones) {
+       if(phone.price < min.price) {
         min = phone
        }
     }
