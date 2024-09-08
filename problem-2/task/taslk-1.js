@@ -9,13 +9,17 @@ const heights2 = [167, 190, 120, 165, 137]
 const heights = [167, 190, 120, 165, 137]
 
 function lowestNumberFinder (numbers) {
-	let min = numbers[0]
+	let min = numbers[0];
+
 	for (var i = numbers.length - 1; i >= 0; i--) {
+
 		if(numbers[i] < min){
 			min = numbers[i]
+
 		}
 	}
-	return min
+
+	return min;
 } 
 
 let lowerHeights = lowestNumberFinder(heights)
