@@ -36,4 +36,38 @@ const mobilePices = 5;
 
 let total = claculateElectronicsBuget(laptopPices, tabletPices, mobilePices);
 
-console.log("Total Electronices Price is :", total);
+console.log("Total Electronices Price is: " + total + " tk");
+
+
+
+
+/// solution way-2
+//----------------
+
+function calculateElectronicsBudget(items) {
+    const prices = {
+        laptop: 35000,
+        tablet: 15000,
+        mobile: 20000
+    };
+
+    let totalBudget = 0;
+
+    for (let item in items) {
+
+    	if(prices[item]) {
+
+    		totalBudget = totalBudget + (prices[item] * items[item])
+
+    	}
+
+    }
+
+    return totalBudget;
+}
+
+let deviceQuentity = { laptop: 2, tablet: 3, mobile: 1 };
+
+const totalCost = calculateElectronicsBudget(deviceQuentity);
+
+console.log("Total budget required: " +  totalCost + " tk");
