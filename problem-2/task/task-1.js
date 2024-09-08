@@ -16,6 +16,7 @@ function lowestNumberFinder (numbers) {
 		if(numbers[i] < min){
 			min = numbers[i]
 
+
 		}
 	}
 
