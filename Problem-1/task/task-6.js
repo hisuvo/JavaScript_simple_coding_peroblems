@@ -12,18 +12,18 @@
 
 function reverseString (letters) {
     if(typeof letters !== "string") {
-        return "please write text"
+        return "please write text";
     }
 
     let text = "";
 
     for(let i = letters.length-1; i >= 0; i--) {
-        text += letters[i]
+        text += letters[i];
     }
-    
-    return text.toLowerCase()
+
+    return text.toLowerCase();
 }
 
 let reverseWord = reverseString ("34984054398");
 
-console.log(reverseWord)
+console.log(reverseWord);
