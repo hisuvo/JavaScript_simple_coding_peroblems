@@ -14,7 +14,6 @@ function deletedInvalid (array) {
 			newArray.push(item)
 		}
 	}
-
 	return newArray
 }
 
